@@ -1,0 +1,18 @@
+ <root BTCPP_format="4" >
+<BehaviorTree ID="MainTree">
+<Sequence>
+            <Delay delay_msec="1000">
+                <MoveTo x="1.5" y="-1.5" />
+            </Delay>
+            <Repeat num_cycles="2">
+                <Sequence>
+                    <MoveTo x="-1.5" y="1.5" />
+                    <Delay delay_msec="1000">
+                        <MoveTo x="1.5" y="-1.5" />
+                    </Delay>
+                </Sequence>
+            </Repeat>
+        </Sequence>
+    
+</BehaviorTree>
+</root>
